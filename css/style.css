@@ -29,6 +29,53 @@
   z-index: -1;
 }
 
+/* ________________Start Navbar Styles_______________ */
+.navbar {
+  background-color: rgba(0, 0, 0, 0.9) !important;
+  box-shadow: 0px 30px 50px rgba(0, 0, 0, 0.05) !important;
+  padding: 15px 0px;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  color: #fff;
+}
+
+.navbar-brand:hover {
+  color: #fff;
+}
+
+.nav-item {
+  padding: 0 10px;
+}
+
+.navbar-nav .nav-link {
+  position: relative;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  width: 0;
+  height: 2px;
+  background-color: #fff; /* Underline color */
+  transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after,
+.navbar-nav .nav-link.active::after {
+  width: 100%;
+}
+
+.navbar-nav .nav-link.active {
+  color: #fff;
+}
+
+/* ________________End Navbar Styles_______________ */
 /* _________________Start Header Styles_____________________ */
 .header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
@@ -71,17 +118,6 @@
 
 /* _________________End Header Styles_____________________ */
 
-/* ________________Start Navbar Styles_______________ */
-.navbar {
-  background-color: rgba(0, 0, 0, 0.6) !important;
-  padding: 25px 0px;
-}
-
-.nav-item {
-  padding: 0 10px;
-}
-
-/* ________________End Navbar Styles_______________ */
 /* ______________Start About Section________________ */
 
 .hero-img {
@@ -195,7 +231,7 @@
   color: #748182;
 }
 
-/* ________________Start Services Styles_______________ */
+/* ________________End Services Styles_______________ */
 
 /* _____________Start Work Styles_______________ */
 
@@ -240,6 +276,10 @@
   transition: 0.5s;
 }
 
+.work img {
+  width: 100%;
+}
+
 .work-caption {
   position: absolute;
   width: 97%;
@@ -257,7 +297,7 @@
 .work-caption h4 {
   font-size: 16px;
   font-weight: 700;
-  transform: translateY(-15px);
+  transform: translateY(-25px);
   transition: 0.5s;
 }
 
@@ -352,4 +392,123 @@
   font-size: 15px;
   color: #748182;
 }
-/* _____________Ebd Counter Styles_______________ */
+/* _____________End Counter Styles_______________ */
+/* _____________Start Team Styles_______________ */
+.team-card {
+  transition: 0.5s;
+  overflow: hidden;
+  background-color: #5b5b5b;
+}
+.team-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.team-img img {
+  width: 100%;
+  transition: 0.5s;
+  overflow: hidden;
+}
+.team-img .social {
+  position: absolute;
+  width: 97%;
+  height: 97%;
+  top: 1.5%;
+  left: 1.5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  transform: rotateY(180deg) scale(0.5);
+  transition: 0.5s;
+  opacity: 0;
+}
+.team-img:hover img {
+  transform: scale(1.2);
+}
+
+.team-img .social .icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  color: #fff;
+  border-radius: 50%;
+  background-color: #1c1c1c;
+  font-size: 16px;
+  transition: 0.5s;
+  outline: 1px solid #1c1c1c;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.team-img .social .icon:hover {
+  background-color: #fff;
+  color: #1c1c1c;
+}
+
+.team-card:hover .social {
+  transform: rotateY(0) scale(1);
+  opacity: 0.9;
+}
+
+/* _____________End Team Styles_______________ */
+/* _____________Start Contact Styles_______________ */
+.contact-details .icon {
+  margin: 0 auto 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-color: #f4f4f4;
+  font-size: 25px;
+  transition: 0.5s;
+}
+
+.contact-details:hover .icon {
+  background-color: #1c1c1c;
+  color: #fff;
+}
+
+.contact-details h6 {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.contact-details p {
+  line-height: 1.6;
+  font-size: 15px;
+  color: #748182;
+}
+
+.contact-input {
+  border: 0 !important;
+  border-radius: 5px !important;
+  background-color: #f4f4f4 !important;
+  padding: 10px !important;
+}
+
+textarea {
+  height: 160px;
+  max-height: 160px;
+  max-width: 100%;
+  margin-top: 0;
+}
+
+.contact-input:focus {
+  box-shadow: none !important;
+}
+
+/* _____________End Contact Styles_______________ */
+
+footer p {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 13px;
+  word-spacing: 2px;
+  line-height: 1.6;
+  color: #748182;
+}

@@ -31,73 +31,54 @@
     <!-- ___________External File CSS____________ -->
     <link rel="stylesheet" href="./css/style.css" />
   </head>
-  <body>
+  <body
+    data-bs-spy="scroll"
+    data-bs-target="#navbarNav"
+    data-bs-offset="0"
+    tabindex="0">
     <!-- ___________________Start Navbar________________ -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top navbar-dark">
-      <div class="container-md">
-        <a class="navbar-brand text-white fw-bolder" href="#">Daniels</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-light fixed-top">
+      <div class="container-md px-sm-5 py-0">
+        <a class="navbar-brand" href="#">DANIELS</a>
         <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
           aria-expanded="false"
           aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div
-          class="collapse navbar-collapse d-md-flex flex-md-row justify-content-end d-sm-flex flex-sm-column"
-          id="navbarSupportedContent">
-          <ul class="nav nav-underline">
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <!-- Use ms-auto for Bootstrap 5 -->
             <li class="nav-item">
-              <a
-                class="nav-link active text-white"
-                data-scroll-nav="0"
-                aria-current="page"
-                href="#home"
-                >Home</a
-              >
+              <a class="nav-link" href="#home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" data-scroll-nav="1" href="#about"
-                >About</a
-              >
+              <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a
-                class="nav-link text-white"
-                data-scroll-nav="2"
-                href="#services"
-                >Services</a
-              >
+              <a class="nav-link" href="#services">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" data-scroll-nav="3" href="#works"
-                >Works</a
-              >
+              <a class="nav-link" href="#works">Works</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" data-scroll-nav="4" href="#clients"
-                >Clients</a
-              >
+              <a class="nav-link" href="#clients">Clients</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" data-scroll-nav="5" href="#team"
-                >Team</a
-              >
+              <a class="nav-link" href="#team">Team</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" data-scroll-nav="6" href="#contact"
-                >Contact</a
-              >
+              <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
     <!-- ___________________End Navbar________________ -->
-
     <!-- ___________________Start Header Section___________________ -->
     <section
       id="home"
@@ -130,10 +111,9 @@
       </div>
     </section>
     <!-- ___________________End Header Section___________________ -->
-
     <!-- _________________Start About Section_______________- -->
-    <main id="about" class="about my-5 py-5" data-scroll-index="1">
-      <div class="container-md">
+    <main id="about" class="about my-5 py-5">
+      <div class="container-md px-md-5">
         <div class="row">
           <div class="col-md-5">
             <div class="hero-img">
@@ -190,8 +170,8 @@
     </main>
     <!-- _________________End About Section_______________- -->
     <!-- __________________Start Services Section__________________ -->
-    <section id="services" class="my-5 py-5 bg-light" data-scroll-index="2">
-      <div class="container-md">
+    <section id="services" class="my-5 py-5 bg-light">
+      <div class="container-md px-md-5">
         <div class="title text-center mt-5">
           <h1 class="fw-bolder">Services.</h1>
         </div>
@@ -261,9 +241,8 @@
     </section>
     <!-- __________________End Services Section__________________ -->
     <!-- ________________Start Portfolio Section__________________ -->
-
-    <section id="works" class="works my-5 py-5" data-scroll-index="3">
-      <div class="container-md">
+    <section id="works" class="works my-5 py-5">
+      <div class="container-md px-md-5">
         <div class="title text-center mt-5 mb-30">
           <h1 class="fw-bolder">Portfolio.</h1>
         </div>
@@ -326,7 +305,7 @@
         </div>
       </div>
 
-      <div class="container-md">
+      <div class="container-md px-md-5">
         <div class="tab-content" id="pills-tabContent">
           <div
             class="tab-pane fade show active"
@@ -337,10 +316,7 @@
             <div class="row g-4">
               <div class="col-lg-4 col-md-6">
                 <div class="work">
-                  <img
-                    src="./images/portfolio/1.jpg"
-                    class="img-fluid"
-                    alt="Work-1" />
+                  <img src="./images/portfolio/1.jpg" alt="Work-1" />
                   <div class="work-caption">
                     <h4>WEB DESIGN</h4>
                     <div>
@@ -354,10 +330,7 @@
               </div>
               <div class="col-lg-4 col-md-6">
                 <div class="work">
-                  <img
-                    src="./images/portfolio/2.jpg"
-                    class="img-fluid"
-                    alt="Work-1" />
+                  <img src="./images/portfolio/2.jpg" alt="Work-1" />
                   <div class="work-caption">
                     <h4>WEB DESIGN</h4>
                     <div>
@@ -371,10 +344,7 @@
               </div>
               <div class="col-lg-4 col-md-6">
                 <div class="work">
-                  <img
-                    src="./images/portfolio/3.jpg"
-                    class="img-fluid"
-                    alt="Work-1" />
+                  <img src="./images/portfolio/3.jpg" alt="Work-1" />
                   <div class="work-caption">
                     <h4>WEB DESIGN</h4>
                     <div>
@@ -388,10 +358,7 @@
               </div>
               <div class="col-lg-4 col-md-6">
                 <div class="work">
-                  <img
-                    src="./images/portfolio/4.jpg"
-                    class="img-fluid"
-                    alt="Work-1" />
+                  <img src="./images/portfolio/4.jpg" alt="Work-1" />
                   <div class="work-caption">
                     <h4>WEB DESIGN</h4>
                     <div>
@@ -405,10 +372,7 @@
               </div>
               <div class="col-lg-4 col-md-6">
                 <div class="work">
-                  <img
-                    src="./images/portfolio/5.jpg"
-                    class="img-fluid"
-                    alt="Work-1" />
+                  <img src="./images/portfolio/5.jpg" alt="Work-1" />
                   <div class="work-caption">
                     <h4>WEB DESIGN</h4>
                     <div>
@@ -422,10 +386,7 @@
               </div>
               <div class="col-lg-4 col-md-6">
                 <div class="work">
-                  <img
-                    src="./images/portfolio/6.jpg"
-                    class="img-fluid"
-                    alt="Work-1" />
+                  <img src="./images/portfolio/6.jpg" alt="Work-1" />
                   <div class="work-caption">
                     <h4>WEB DESIGN</h4>
                     <div>
@@ -448,10 +409,7 @@
             <div class="row g-4">
               <div class="col-lg-4 col-md-6">
                 <div class="work">
-                  <img
-                    src="./images/portfolio/4.jpg"
-                    class="img-fluid"
-                    alt="Work-1" />
+                  <img src="./images/portfolio/4.jpg" alt="Work-1" />
                   <div class="work-caption">
                     <h4>WEB DESIGN</h4>
                     <div>
@@ -465,10 +423,7 @@
               </div>
               <div class="col-lg-4 col-md-6">
                 <div class="work">
-                  <img
-                    src="./images/portfolio/6.jpg"
-                    class="img-fluid"
-                    alt="Work-1" />
+                  <img src="./images/portfolio/6.jpg" alt="Work-1" />
                   <div class="work-caption">
                     <h4>WEB DESIGN</h4>
                     <div>
@@ -491,10 +446,7 @@
             <div class="row g-4">
               <div class="col-lg-4 col-md-6">
                 <div class="work">
-                  <img
-                    src="./images/portfolio/2.jpg"
-                    class="img-fluid"
-                    alt="Work-1" />
+                  <img src="./images/portfolio/2.jpg" alt="Work-1" />
                   <div class="work-caption">
                     <h4>WEB DESIGN</h4>
                     <div>
@@ -508,10 +460,7 @@
               </div>
               <div class="col-lg-4 col-md-6">
                 <div class="work">
-                  <img
-                    src="./images/portfolio/5.jpg"
-                    class="img-fluid"
-                    alt="Work-1" />
+                  <img src="./images/portfolio/5.jpg" alt="Work-1" />
                   <div class="work-caption">
                     <h4>WEB DESIGN</h4>
                     <div>
@@ -534,10 +483,7 @@
             <div class="row g-4">
               <div class="col-lg-4 col-md-6">
                 <div class="work">
-                  <img
-                    src="./images/portfolio/1.jpg"
-                    class="img-fluid"
-                    alt="Work-1" />
+                  <img src="./images/portfolio/1.jpg" alt="Work-1" />
                   <div class="work-caption">
                     <h4>WEB DESIGN</h4>
                     <div>
@@ -551,10 +497,7 @@
               </div>
               <div class="col-lg-4 col-md-6">
                 <div class="work">
-                  <img
-                    src="./images/portfolio/3.jpg"
-                    class="img-fluid"
-                    alt="Work-1" />
+                  <img src="./images/portfolio/3.jpg" alt="Work-1" />
                   <div class="work-caption">
                     <h4>WEB DESIGN</h4>
                     <div>
@@ -568,10 +511,7 @@
               </div>
               <div class="col-lg-4 col-md-6">
                 <div class="work">
-                  <img
-                    src="./images/portfolio/5.jpg"
-                    class="img-fluid"
-                    alt="Work-1" />
+                  <img src="./images/portfolio/5.jpg" alt="Work-1" />
                   <div class="work-caption">
                     <h4>WEB DESIGN</h4>
                     <div>
@@ -590,8 +530,8 @@
     </section>
     <!-- ________________End Portfolio Section__________________ -->
     <!-- ________________Start Testimonial Section__________________ -->
-    <section id="clients" class="clients py-5 my-5" data-scroll-index="4">
-      <div class="container-md">
+    <section id="clients" class="clients py-5 my-5">
+      <div class="container-md px-md-5">
         <div class="title text-center mt-5 mb-30">
           <h1 class="fw-bolder">Testimonials.</h1>
         </div>
@@ -675,7 +615,7 @@
     <!-- ________________End Testimonials Section__________________ -->
     <!-- ________________Start Counter Section__________________ -->
     <section class="counter py-5 text-center">
-      <div class="container-md">
+      <div class="container-md px-md-5">
         <div class="row g-5">
           <div class="col-md-3">
             <span class="icon"><i class="fa-solid fa-users"></i></span>
@@ -703,6 +643,154 @@
       </div>
     </section>
     <!-- ________________End Counter Section__________________ -->
+    <!-- _______________Start Teams Section_________________ -->
+    <section id="team" class="team py-5 my-5 bg-light">
+      <div class="container-md px-md-5">
+        <div class="title text-center mt-5 mb-30">
+          <h1 class="fw-bolder">Our Team.</h1>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6">
+            <div class="team-card rounded">
+              <div class="team-img">
+                <img src="./images/1.jpg" alt="" />
+                <div class="social">
+                  <span class="icon"
+                    ><i class="fa-brands fa-facebook-f"></i
+                  ></span>
+                  <span class="icon"><i class="fa-brands fa-twitter"></i></span>
+                  <span class="icon"
+                    ><i class="fa-brands fa-pinterest"></i
+                  ></span>
+                  <span class="icon"
+                    ><i class="fa-brands fa-linkedin-in"></i
+                  ></span>
+                </div>
+              </div>
+              <div class="team-text text-center py-4 text-white">
+                <h4>John Doe</h4>
+                <h5 class="fs-4 fw-bold">Front-End Developer</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="team-card rounded">
+              <div class="team-img">
+                <img src="./images/2.jpg" alt="" />
+                <div class="social">
+                  <span class="icon"
+                    ><i class="fa-brands fa-facebook-f"></i
+                  ></span>
+                  <span class="icon"><i class="fa-brands fa-twitter"></i></span>
+                  <span class="icon"
+                    ><i class="fa-brands fa-pinterest"></i
+                  ></span>
+                  <span class="icon"
+                    ><i class="fa-brands fa-linkedin-in"></i
+                  ></span>
+                </div>
+              </div>
+              <div class="team-text text-center py-4 text-white">
+                <h4>Dave Wood</h4>
+                <h5 class="fs-4 fw-bold">Back-End Developer</h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="team-card rounded">
+              <div class="team-img">
+                <img src="./images/1.jpg" alt="" />
+                <div class="social">
+                  <span class="icon"
+                    ><i class="fa-brands fa-facebook-f"></i
+                  ></span>
+                  <span class="icon"><i class="fa-brands fa-twitter"></i></span>
+                  <span class="icon"
+                    ><i class="fa-brands fa-pinterest"></i
+                  ></span>
+                  <span class="icon"
+                    ><i class="fa-brands fa-linkedin-in"></i
+                  ></span>
+                </div>
+              </div>
+              <div class="team-text text-center py-4 text-white">
+                <h4>Claire Chedd</h4>
+                <h5 class="fs-4 fw-bold">Back-End Developer</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- _______________End Teams Section_________________ -->
+    <!-- ________________Start Contact Section_________________ -->
+    <section id="contact" class="contact pt-2 pb-5 mb-5">
+      <div class="container-md px-md-5">
+        <div class="title text-center mt-5 mb-30">
+          <h1 class="fw-bolder">Contact Us.</h1>
+        </div>
+        <div class="row g-5">
+          <div class="col-md-4">
+            <div class="contact-details bg-white px-3 py-5 text-center">
+              <span class="icon"
+                ><i class="fa-solid fa-location-arrow"></i
+              ></span>
+              <h6>Address</h6>
+              <p>6834 Hollywood Blvd - Los Angeles CA</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="contact-details bg-white px-3 py-5 text-center">
+              <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+              <h6>Email</h6>
+              <p>Support@website.com</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="contact-details bg-white px-3 py-5 text-center">
+              <span class="icon"><i class="fa-solid fa-phone"></i></span>
+              <h6>Phone</h6>
+              <p>+20 010 2517 8918</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row g-3">
+          <div class="col-md-6">
+            <input
+              type="text"
+              class="form-control contact-input"
+              placeholder="First name"
+              aria-label="First name" />
+          </div>
+          <div class="col-md-6">
+            <input
+              type="email"
+              class="form-control contact-input"
+              placeholder="Email"
+              aria-label="Email" />
+          </div>
+          <div class="col-12">
+            <textarea
+              class="form-control contact-input"
+              rows="4"
+              name="message"
+              placeholder="Message"
+              required
+              id="floatingTextarea"></textarea>
+          </div>
+        </div>
+        <button type="button" class="btn btn-custom mt-3 px-4">Submit</button>
+      </div>
+    </section>
+    <!-- ________________End Contact Section_________________ -->
+    <!-- ________________Start Footer Section_________________ -->
+    <footer class="py-3 bg-black">
+      <div class="container-fluid">
+        <p>Copy Right 2018 © By Daniels All Rights Reserved</p>
+      </div>
+    </footer>
+    <!-- ________________End Footer Section_________________ -->
 
     <!-- ____________________Start Bootstrap JS_____________________ -->
     <!--  -->
