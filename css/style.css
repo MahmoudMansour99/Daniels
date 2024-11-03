@@ -52,7 +52,7 @@
 .navbar-nav .nav-link {
   position: relative;
   color: #fff;
-  transition: color 0.3s ease;
+  transition: 0.5s;
 }
 
 .navbar-nav .nav-link::after {
@@ -63,7 +63,7 @@
   width: 0;
   height: 2px;
   background-color: #fff; /* Underline color */
-  transition: width 0.3s ease;
+  transition: 0.5s;
 }
 
 .navbar-nav .nav-link:hover::after,
@@ -312,7 +312,6 @@
   align-items: center;
   width: 30px;
   height: 30px;
-  color: #fff;
   border-radius: 50%;
   background-color: #1c1c1c;
   font-size: 14px;
@@ -321,9 +320,17 @@
   cursor: pointer;
 }
 
+.work-caption .icon a {
+  color: #fff;
+  transition: 0.5s;
+}
+
 .work-caption .icon:hover {
   background-color: #fff;
-  color: #1c1c1c;
+}
+
+.work-caption .icon a:hover {
+  color: #000;
 }
 
 .work:hover .work-caption {
@@ -361,8 +368,7 @@
 }
 
 .carousel-indicators {
-  transition: 0.5s;
-  margin-top: 100px !important;
+  bottom: -30px !important;
 }
 
 .carousel-indicators [data-bs-target] {
@@ -433,7 +439,6 @@
   align-items: center;
   width: 35px;
   height: 35px;
-  color: #fff;
   border-radius: 50%;
   background-color: #1c1c1c;
   font-size: 16px;
@@ -443,9 +448,17 @@
   margin: 0 5px;
 }
 
+.team-img .social .icon a {
+  color: #fff;
+  transition: 0.5s;
+}
+
 .team-img .social .icon:hover {
   background-color: #fff;
-  color: #1c1c1c;
+}
+
+.team-img .social .icon a:hover {
+  color: #000;
 }
 
 .team-card:hover .social {
